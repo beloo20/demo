@@ -71,14 +71,14 @@ def getBalance(myclient, coin):
 table = "bot_29"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -158,7 +158,7 @@ if buyConditionT(df.iloc[-2], df.iloc[-3]) and actif == 1 and ( status == "Libre
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -275,14 +275,14 @@ sleep(2)
 table = "bot_30"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -347,7 +347,7 @@ if df['SUPER_TREND_DIRECTION1'].iloc[-2]+df['SUPER_TREND_DIRECTION2'].iloc[-2]+d
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -459,14 +459,14 @@ sleep(2)
 table = "bot_31"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -530,7 +530,7 @@ if buyConditionA(df.iloc[-2], df.iloc[-3]) and actif == 1 and ( status == "Libre
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -639,14 +639,14 @@ sleep(2)
 table = "bot_32"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -693,7 +693,7 @@ if df['EMA28'].iloc[-2] > df['EMA48'].iloc[-2] and df['STOCH_RSI'].iloc[-2] < 0.
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -801,14 +801,14 @@ sleep(2)
 table = "bot_33"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -881,7 +881,7 @@ if buyConditionT(df.iloc[-2], df.iloc[-3]) and (df['SUPER_TREND_DIRECTION1'].ilo
 
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -997,14 +997,14 @@ sleep(2)
 table = "bot_34"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -1077,7 +1077,7 @@ if buyConditionT(df.iloc[-2], df.iloc[-3]) and actif == 1 and ( status == "Libre
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -1193,14 +1193,14 @@ sleep(2)
 table = "bot_35"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -1265,7 +1265,7 @@ if df['SUPER_TREND_DIRECTION1'].iloc[-2]+df['SUPER_TREND_DIRECTION2'].iloc[-2]+d
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -1377,14 +1377,14 @@ sleep(2)
 table = "bot_36"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -1448,7 +1448,7 @@ if buyConditionA(df.iloc[-2], df.iloc[-3]) and actif == 1 and ( status == "Libre
 
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -1557,14 +1557,14 @@ sleep(2)
 table = "bot_37"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -1611,7 +1611,7 @@ if df['EMA28'].iloc[-2] > df['EMA48'].iloc[-2] and df['STOCH_RSI'].iloc[-2] < 0.
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
@@ -1718,14 +1718,14 @@ sleep(2)
 table = "bot_38"
 nom_bot = ernest.get(connection1, table, 1)
 nom_crypto = ernest.get(connection1, table, 2)
-nombre_crypto = ernest.get(connection1, table, 3)
-usdt = ernest.get(connection1, table, 5)
+nombre_crypto = float( ernest.get(connection1, table, 3) ) 
+usdt = float( ernest.get(connection1, table, 5) ) 
 
-total_trad = ernest.get(connection1, table, 8)
-positif_trad = ernest.get(connection1, table, 9)
-negatif_trad = ernest.get(connection1, table, 10)
+total_trad = float( ernest.get(connection1, table, 8) )
+positif_trad = float( ernest.get(connection1, table, 9) )
+negatif_trad = float( ernest.get(connection1, table, 10) )
 status = ernest.get(connection1, table, 11)
-prix_achat 	= ernest.get(connection1, table, 13)
+prix_achat 	= float( ernest.get(connection1, table, 13) )
 actif 	= ernest.get(connection1, table, 15)
 
 # ****************************************************************
@@ -1799,7 +1799,7 @@ if buyConditionT(df.iloc[-2], df.iloc[-3]) and (df['SUPER_TREND_DIRECTION1'].ilo
         
         # ernest information pour la base de donner
         nombre_crypto = quantityBuy
-        valeur_crypto = quantityBuy * actualPrice
+        valeur_crypto = float( quantityBuy ) * actualPrice
         usdt = 0
         indicateurs1 = df['TRIX_HISTO'].iloc[-1]
         indicatuer2 = df['STOCH_RSI'].iloc[-1]
